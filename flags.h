@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+/* Структура для установки флагов */
 typedef struct {
   int help;
   int intersections;

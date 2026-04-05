@@ -17,6 +17,6 @@ typedef double (*func_t)(double x);
  * Возвращает:
  *   приближенное значение интеграла
  */
-double integral(func_t f, double a, double b, double eps);
+double INTEGRAL_integral(func_t f, double a, double b, double eps);
 
 #endif /* INTEGRAL_H */

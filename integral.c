@@ -7,7 +7,7 @@
  * Метод Симпсона (парабол) для численного интегрирования
  * Использует адаптивное разбиение для достижения заданной точности
  */
-double integral(func_t f, double a, double b, double eps) {
+double INTEGRAL_integral(func_t f, double a, double b, double eps) {
   int n = 2; /* Начальное количество подотрезков */
   double I_old, I_new;
   double h, sum;
