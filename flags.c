@@ -59,16 +59,16 @@ static void FlagHandler(flag_and_pfram_t *temp) {
 
   if (temp->intersections) {
     int show_iterations = 0;
-    printf("  -intersections\n");
     CALCULATE_find_all_intersections(show_iterations);
   }
 
   if (temp->iterations && temp->intersections) {
-    printf("  -iterations\n");
+    int show_iterations = 1;
+    CALCULATE_find_all_intersections(show_iterations);
   }
 
   if (temp->area) {
-    printf("  -area\n");
+    CALCULATE_compute_area();
   }
 
   if (temp->test) {
