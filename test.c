@@ -23,9 +23,9 @@ void run_tests(void) {
     printf("  Iterations: %d\n", iters);
     
     if (fabs(result - 2.0) < eps) {
-        printf("  Test passed ✓\n");
+        printf("  Test passed\n");
     } else {
-        printf("  Test failed ✗\n");
+        printf("  Test failed\n");
     }
     
     /* Тест 2: integral - интегрирование x^2 от 0 до 2 */
@@ -36,9 +36,9 @@ void run_tests(void) {
     printf("  Result: %.10f\n", result);
     
     if (fabs(result - 8.0/3.0) < eps) {
-        printf("  Test passed ✓\n");
+        printf("  Test passed\n");
     } else {
-        printf("  Test failed ✗\n");
+        printf("  Test failed\n");
     }
     
     /* Тест 3: integral - интегрирование sin(x) от 0 до π */
@@ -49,9 +49,9 @@ void run_tests(void) {
     printf("  Result: %.10f\n", result);
     
     if (fabs(result - 2.0) < 1e-4) {
-        printf("  Test passed ✓\n");
+        printf("  Test passed\n");
     } else {
-        printf("  Test failed ✗\n");
+        printf("  Test failed\n");
     }
     
     printf("\nAll tests completed.\n");

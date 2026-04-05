@@ -1,8 +1,9 @@
 #include "flags.h"
+#include "calculate.h"
 #include <getopt.h>
 #include <stdio.h>
 
-// static function declaration
+/* Статические функции */
 static void FlagHandler(flag_and_pfram_t *temp);
 static void print_help(void);
 
@@ -57,14 +58,16 @@ static void FlagHandler(flag_and_pfram_t *temp) {
   }
 
   if (temp->intersections) {
+    int show_iterations = 0;
     printf("  -intersections\n");
+    CALCULATE_find_all_intersections(show_iterations);
   }
 
-  if (temp->iterations) {
+  if (temp->iterations && temp->intersections) {
     printf("  -iterations\n");
   }
 
-    if (temp->area) {
+  if (temp->area) {
     printf("  -area\n");
   }
 

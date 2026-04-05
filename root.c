@@ -19,7 +19,7 @@ static double dh(deriv_t df, deriv_t dg, double x) {
 /*
  * Комбинированный метод (метод хорд + метод Ньютона)
  */
-double root(func_t f, func_t g, double a, double b,
+double ROOT_root(func_t f, func_t g, double a, double b,
            deriv_t df, deriv_t dg, double eps, int *iterations) {
     double ha, hb;
     double x_chord, x_newton, x_new;
